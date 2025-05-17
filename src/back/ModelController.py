@@ -12,10 +12,10 @@ class ModelController:
         print("ModelController.__init__ ->")
 
         self.model_path = osp.join(Definitions.ROOT_DIR, "resources/models")
-        self.rf_model_path = osp.join(self.model_path, "rf_model.joblib")
+        # self.rf_model_path = osp.join(self.model_path, "rf_model.joblib")
         self.maxent_model_path = osp.join(self.model_path, "maxent_model.joblib")
 
-        self.rf_model = joblib.load(self.rf_model_path)
+        # self.rf_model = joblib.load(self.rf_model_path)
         self.maxent_model = joblib.load(self.maxent_model_path)
 
         self.input_df = ""
